@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Websites 2 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-box" id="login-box">
+        <h2>Countinue Your Journey</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required>
+                <label>User Name</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required>
+                <label>Password</label>
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </a>
+        </form>
+		<div class="button">
+        <button onclick="toggleForm()" class="switch-button">Switch to Sign Up</button>
+	</div>
+    </div>
+
+    <div class="signup-box" id="signup-box" style="display: none;">
+        <h2>Start Your Journey</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="username" required>
+                <label>User Name</label>
+            </div>
+            <div class="user-box">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="confirm-password" required>
+                <label>Confirm Password</label>
+            </div>
+            <a href="#" onclick="signUp()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Sign Up
+            </a>
+        </form>
+        <button onclick="toggleForm()" class="switch-button">Switch to Login</button>
+    </div>
+
+    
+		<script src="script.js"></script>
+</body>
+</html>
